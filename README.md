@@ -1,70 +1,168 @@
-# Getting Started with Create React App
+# 💻 Sistema de Registro de Entradas y Salidas - Gestión de Salas de Cómputo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 📍 Facultad de Ingeniería de Sistemas  
+**Universidad Francisco De Paula Santander** – Cúcuta, Norte de Santander  
+**Ingeniería de Sistemas – 2025 - I**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 👥 Elaborado por:
 
-### `npm start`
+- **Keyly Johana Ovallos Díaz** - 1152214  
+- **Ángel Leonardo Montañez Corredor** - 1152283  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Materia: *Seminario Integrador II*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📌 1. Presentación General del Anteproyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📖 Título
+**Sistema de registro de entradas y salidas para la gestión de salas de computadores en la Facultad de Ingeniería de Sistemas.**
 
-### `npm run build`
+### 🧩 Planteamiento del Problema
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Las salas de cómputo son espacios clave para el desarrollo académico de los estudiantes. Sin embargo, la ausencia de un sistema automatizado para el control de ingreso y salida complica la trazabilidad del uso de los equipos, afectando la gestión, responsabilidad y mantenimiento de estos recursos. Actualmente, este proceso es manual, poco eficiente y propenso a errores.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Un sistema digital permitiría asociar el uso de un equipo a un usuario específico, facilitando la identificación en caso de daños, y optimizando tanto la gestión como la disponibilidad de los equipos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 🎯 Justificación
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Implementar una aplicación que registre de manera digital las entradas y salidas permitirá:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Optimizar la gestión de salas de cómputo.
+- Mejorar la trazabilidad del uso de equipos.
+- Asignar responsabilidades de forma justa y clara.
+- Reducir los tiempos y errores del registro manual.
+- Facilitar la toma de decisiones a través de reportes y estadísticas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ✅ Objetivos
 
-## Learn More
+### Objetivo General
+Desarrollar una aplicación que registre de forma digital la entrada y salida de estudiantes en las salas de cómputo, mejorando el control de acceso y la gestión de equipos.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Objetivos Específicos
+- Diseñar una interfaz sencilla para registrar entradas y salidas.
+- Implementar funcionalidades básicas como agregar, editar y eliminar registros.
+- Almacenar los datos localmente de forma persistente.
+- Reducir errores humanos mediante una experiencia de usuario clara y guiada.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧭 Alcances y Delimitaciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Alcance
+- Registro de entrada y salida de estudiantes.
+- Visualización de registros en tablas dinámicas.
+- Gestión de computadores y asistencias.
+- Almacenamiento de datos en `localStorage`.
 
-### Analyzing the Bundle Size
+### Delimitaciones
+- Uso exclusivo para las salas de la Facultad de Ingeniería de Sistemas.
+- Limitado a estudiantes y personal autorizado.
+- No está integrado con otros sistemas universitarios.
+- Dependencia de que los estudiantes realicen el registro correctamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Limitaciones
+- Sin integración externa.
+- El éxito depende del compromiso del usuario final.
+- Versión inicial sujeta a tiempo y recursos limitados.
+- Se consideran futuras mejoras.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛠️ Estructura del Proyecto
 
-### Advanced Configuration
+### Tecnologías Utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **React.js** – Framework principal para la interfaz.
+- **Tailwind CSS** – Para estilos rápidos y modernos.
+- **LocalStorage API** – Persistencia de datos sin servidor.
 
-### Deployment
+### Principales Módulos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `Rooms.js` – Gestión de salas.
+- `Computers.js` – Gestión de computadores con opciones para editar y eliminar.
+- `Attendance.js` – Registro de asistencias con funcionalidades CRUD.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📂 Estructura de Archivos
+
+```
+
+src/
+│
+├── pages/
+│   ├── Rooms.js
+│   ├── Computers.js
+│   └── Attendance.js
+│
+├── utils/
+│   └── storage.js   // Contiene las funciones saveData y loadData
+│
+├── App.js
+└── index.js
+
+````
+
+---
+
+## 🖼️ Interfaz de Usuario
+
+Cada módulo cuenta con una interfaz amigable:
+
+- Campos de entrada claros.
+- Botones accesibles y con retroalimentación visual.
+- Tablas limpias y ordenadas.
+
+---
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/registro-salas.git
+````
+
+2. Instala las dependencias:
+
+```bash
+cd registro-salas
+npm install
+```
+
+3. Ejecuta la aplicación:
+
+```bash
+npm start
+```
+
+4. Abre en tu navegador:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 📈 Futuras Mejoras
+
+* Integración con base de datos externa (Firebase, Supabase, etc.)
+* Exportación de reportes en PDF/Excel.
+* Autenticación de usuarios.
+* Registro de hora y fecha automática.
+
+---
+
+## 🏁 Conclusión
+
+Este proyecto representa un paso hacia la digitalización de procesos internos en ambientes académicos. La trazabilidad, eficiencia y claridad que ofrece mejora significativamente la gestión de recursos tecnológicos dentro de las salas de cómputo.
+
+---
+
+**¡Gracias por revisar este proyecto!**
